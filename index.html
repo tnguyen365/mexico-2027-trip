@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#0b4f5c">
+<meta name="description" content="Third Annual Mexico Trip 2027 — Sept 21–26. Resort shortlist, flights by origin, cost estimator, checklist and previous trips.">
+<title>Third Annual Mexico Trip 2027 · Sept 21–26</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='26' r='14' fill='%23f2a541'/%3E%3Cpath d='M0 44c8-6 16-6 24 0s16 6 24 0 12-5 16-3v23H0z' fill='%230e8a8f'/%3E%3C/svg%3E">
+<link rel="preload" as="image" href="img/hero.webp">
+<style>
+:root{
+  --sand:#fbf5ea; --sand-2:#f3e8d4; --card:#fffdf9; --ink:#14313a; --ink-2:#3d5960; --muted:#62777b; --line:#e6dccb;
+  --sea:#0e8a8f; --sea-deep:#0b4f5c; --sea-ink:#0a6469; --coral:#d9482c; --coral-ink:#b23a22; --marigold:#f2a541; --pink:#d63a7a; --lime:#7cb342;
+  --ok:#2e7d32; --warn-bg:#fff4e0; --warn-line:#f2c374; --warn-ink:#7a4a00;
+  --shadow:0 1px 2px rgba(20,49,58,.06),0 8px 24px -8px rgba(20,49,58,.18);
+  --radius:18px; --nav-h:56px;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root{
+  --sand:#0d1a1e; --sand-2:#13252a; --card:#152a30; --ink:#eaf4f2; --ink-2:#bcd2d0; --muted:#8aa3a3; --line:#264047;
+  --sea:#3cc6c0; --sea-deep:#0a3a44; --sea-ink:#6fe0d8; --coral:#e2553a; --coral-ink:#ff9b83; --marigold:#ffbf5f;
+  --warn-bg:#2d2412; --warn-line:#6b5220; --warn-ink:#ffd58a; --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 28px -10px rgba(0,0,0,.6);
+}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav-h) + 12px);-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--sand);line-height:1.55;font-size:16px}
+img{max-width:100%;display:block}
+a{color:var(--sea-ink)}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--marigold);outline-offset:2px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:8px;z-index:100;background:var(--ink);color:#fff;padding:.5rem 1rem;border-radius:8px}
+.skip:focus{left:8px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wrap{max-width:1180px;margin:0 auto;padding:0 18px}
+.hero{position:relative;color:#fff;min-height:min(92vh,760px);display:flex;align-items:flex-end;overflow:hidden;isolation:isolate}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(6,40,48,.15) 0%,rgba(6,40,48,.35) 45%,rgba(6,30,36,.85) 100%)}
+.picado{position:absolute;top:0;left:0;right:0;height:46px;z-index:0;display:flex;filter:drop-shadow(0 3px 4px rgba(0,0,0,.2))}
+.picado span{flex:1;height:100%;clip-path:polygon(0 0,100% 0,100% 70%,85% 100%,70% 72%,50% 100%,30% 72%,15% 100%,0 70%);opacity:.92;-webkit-mask:radial-gradient(circle at 50% 38%,transparent 5px,#000 6px);mask:radial-gradient(circle at 50% 38%,transparent 5px,#000 6px)}
+.picado span:nth-child(5n+1){background:var(--pink)}.picado span:nth-child(5n+2){background:var(--marigold)}.picado span:nth-child(5n+3){background:#25b0a8}.picado span:nth-child(5n+4){background:#e2553a}.picado span:nth-child(5n){background:#8e5bd6}
+.hero-inner{width:100%;max-width:1180px;margin:0 auto;padding:90px 18px 36px}
+.kicker{display:inline-flex;gap:.5rem;align-items:center;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;background:rgba(255,255,255,.16);backdrop-filter:blur(6px);padding:.35rem .75rem;border-radius:999px;border:1px solid rgba(255,255,255,.25)}
+.hero h1{font-family:var(--serif);font-weight:700;font-size:clamp(2.3rem,7vw,4.6rem);line-height:1.02;margin:.6rem 0 .4rem;letter-spacing:-.01em;text-shadow:0 2px 18px rgba(0,0,0,.35)}
+.hero .sub{font-size:clamp(1.05rem,2.6vw,1.35rem);margin:0 0 1rem;opacity:.95}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 1.2rem;padding:0;list-style:none}
+.chips li{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:.35rem .8rem;border-radius:999px;font-size:.9rem;backdrop-filter:blur(6px)}
+.hero-grid{display:grid;gap:16px;grid-template-columns:1fr}
+@media (min-width:860px){.hero-grid{grid-template-columns:1.35fr 1fr;align-items:end}}
+.glass{background:rgba(8,40,48,.45);border:1px solid rgba(255,255,255,.22);border-radius:var(--radius);padding:16px 18px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.storm{display:flex;gap:.6rem;align-items:flex-start;font-size:.95rem;margin:0}
+.storm svg{flex:none;margin-top:3px;color:var(--marigold)}
+.countdown-label{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;opacity:.85;margin:0 0 .4rem;font-weight:700}
+.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;text-align:center;margin:0}
+.countdown div{background:rgba(255,255,255,.12);border-radius:12px;padding:.55rem .2rem}
+.countdown b{display:block;font-family:var(--serif);font-size:clamp(1.6rem,5vw,2.3rem);line-height:1;font-variant-numeric:tabular-nums}
+.countdown span{font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;opacity:.85}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:12px}
+.btn{display:inline-flex;align-items:center;gap:.45rem;border:0;border-radius:999px;padding:.6rem 1rem;font-weight:650;cursor:pointer;text-decoration:none;line-height:1.1;min-height:42px}
+.btn-primary{background:var(--coral);color:#fff}.btn-primary:hover{filter:brightness(1.07)}
+.btn-ghost{background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.35)}
+.btn-soft{background:var(--sand-2);color:var(--ink);border:1px solid var(--line)}
+.btn-soft:hover{border-color:var(--sea)}
+.nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--sand) 86%,transparent);backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1180px;margin:0 auto;padding:0 10px;height:var(--nav-h);display:flex;align-items:center;gap:6px;overflow-x:auto;scrollbar-width:none}
+.nav-inner::-webkit-scrollbar{display:none}
+.brand{font-family:var(--serif);font-weight:700;white-space:nowrap;margin-right:auto;padding:0 8px;text-decoration:none;color:var(--ink);display:flex;align-items:center;gap:.4rem}
+.brand small{font-family:var(--sans);font-weight:600;color:var(--muted);font-size:.78rem}
+.nav a.link{white-space:nowrap;text-decoration:none;color:var(--ink-2);font-weight:600;font-size:.93rem;padding:.45rem .8rem;border-radius:999px}
+.nav a.link:hover{background:var(--sand-2)}
+.nav a.link[aria-current="true"]{background:var(--sea-deep);color:#fff}
+@media (max-width:700px){.brand small{display:none}.brand{font-size:.95rem}}
+main section{padding:56px 0 8px}
+.sec-head{display:flex;align-items:baseline;gap:.75rem;flex-wrap:wrap}
+.sec-num{font-family:var(--serif);color:var(--coral);font-size:1.1rem;font-weight:700}
+h2{font-family:var(--serif);font-size:clamp(1.8rem,4.5vw,2.6rem);margin:0;line-height:1.1;letter-spacing:-.01em}
+h3{margin:0;line-height:1.25}
+.lede{color:var(--ink-2);max-width:72ch;margin:.6rem 0 1.4rem}
+.note{font-size:.88rem;color:var(--muted);margin:.6rem 0;max-width:90ch}
+.note strong{color:var(--ink-2)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.placeholder{font-style:italic;color:var(--muted)}
+.ins{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin:22px 0 0;padding:14px 16px;border-radius:14px;background:var(--warn-bg);border:1px solid var(--warn-line);color:var(--warn-ink)}
+.ins svg{flex:none}
+.ins p{margin:0;flex:1 1 260px}
+.ins.done{background:color-mix(in srgb,var(--ok) 12%,var(--card));border-color:color-mix(in srgb,var(--ok) 40%,transparent);color:var(--ink)}
+.ins label{display:inline-flex;gap:.5rem;align-items:center;font-weight:700;cursor:pointer;background:var(--card);padding:.45rem .8rem;border-radius:999px;border:1px solid var(--line);color:var(--ink)}
+.ins input{width:20px;height:20px;accent-color:var(--ok)}
+.toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin:0 0 18px}
+.seg{display:inline-flex;background:var(--sand-2);border:1px solid var(--line);border-radius:999px;padding:3px;gap:2px;flex-wrap:wrap}
+.seg button{border:0;background:transparent;padding:.42rem .85rem;border-radius:999px;font-weight:600;font-size:.9rem;cursor:pointer;color:var(--ink-2);min-height:36px}
+.seg button[aria-pressed="true"]{background:var(--card);color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.12)}
+.select{appearance:none;background:var(--card) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236b7f83' stroke-width='2' fill='none'/%3E%3C/svg%3E") no-repeat right .8rem center;border:1px solid var(--line);border-radius:12px;padding:.5rem 2.2rem .5rem .8rem;min-height:40px;font-weight:600}
+.tool-group{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.tool-group label{font-size:.85rem;color:var(--muted);font-weight:600}
+.resort-grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr))}
+.resort{overflow:hidden;display:flex;flex-direction:column;transition:transform .2s ease}
+.resort:hover{transform:translateY(-2px)}
+.resort.is-compared{outline:3px solid var(--sea);outline-offset:-1px}
+.photo{position:relative;aspect-ratio:16/10;background:var(--sand-2);overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover}
+.badge{position:absolute;left:12px;top:12px;background:rgba(10,30,36,.78);color:#fff;font-weight:700;font-size:.8rem;padding:.3rem .65rem;border-radius:999px}
+.badge.top{background:var(--coral)}
+.badge.new{background:#7b47c9}
+.coast{position:absolute;right:12px;top:12px;background:rgba(255,255,255,.92);color:#0b4f5c;font-weight:700;font-size:.72rem;padding:.25rem .55rem;border-radius:999px;text-transform:uppercase;letter-spacing:.06em}
+.rbody{padding:16px 18px 18px;display:flex;flex-direction:column;gap:10px;flex:1}
+.rbody h3{font-family:var(--serif);font-size:1.35rem}
+.loc{color:var(--muted);font-size:.9rem;margin:-6px 0 0}
+dl.facts{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 10px;font-size:.92rem}
+dl.facts dt{font-weight:700;color:var(--sea-ink);font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;padding-top:.15rem}
+dl.facts dd{margin:0;color:var(--ink-2)}
+.why{background:color-mix(in srgb,var(--marigold) 16%,var(--card));border-left:4px solid var(--marigold);padding:.55rem .75rem;border-radius:8px;font-size:.92rem}
+.rates{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:auto}
+.rate{background:var(--sand-2);border-radius:12px;padding:.55rem .7rem}
+.rate span{display:block;font-size:.72rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.05em;line-height:1.25}
+.rate b{font-size:1.05rem;font-variant-numeric:tabular-nums}
+.rate small{color:var(--muted);font-weight:500;white-space:nowrap}
+.rate b{white-space:nowrap}
+.caption{font-size:.82rem;color:var(--muted);margin:0}
+.card-actions{display:flex;gap:8px;flex-wrap:wrap}
+.cmp-toggle{display:inline-flex;align-items:center;gap:.45rem;font-weight:650;font-size:.88rem;cursor:pointer;padding:.4rem .75rem;border-radius:999px;border:1px solid var(--line);background:var(--card);min-height:36px}
+.cmp-toggle input{accent-color:var(--sea);width:17px;height:17px}
+.mini{font-size:.86rem;font-weight:650;padding:.4rem .75rem;border-radius:999px;border:1px solid var(--line);background:var(--card);cursor:pointer;min-height:36px}
+.mini:hover{border-color:var(--sea)}
+.alternate{display:grid;grid-template-columns:1fr;overflow:hidden;margin-top:22px}
+@media (min-width:760px){.alternate{grid-template-columns:320px 1fr}}
+.alternate .photo{aspect-ratio:16/10}
+@media (min-width:760px){.alternate .photo{aspect-ratio:auto;min-height:220px}.alternate .photo img{position:absolute;inset:0}}
+.alternate .rbody{justify-content:center}
+.alt-tag{align-self:flex-start;background:var(--sea-deep);color:#fff;font-size:.72rem;font-weight:700;padding:.25rem .6rem;border-radius:999px;text-transform:uppercase;letter-spacing:.08em}
+.table-wrap{overflow-x:auto;border-radius:var(--radius);border:1px solid var(--line);background:var(--card);box-shadow:var(--shadow)}
+table{border-collapse:collapse;width:100%;font-size:.93rem}
+th,td{padding:.75rem .9rem;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+thead th{background:var(--sand-2);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--ink-2)}
+tbody tr:last-child td{border-bottom:0}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+th button.sort{all:unset;cursor:pointer;display:inline-flex;gap:.3rem;align-items:center}
+th button.sort:focus-visible{outline:3px solid var(--marigold)}
+th[aria-sort="ascending"] .arr::after{content:"▲"}th[aria-sort="descending"] .arr::after{content:"▼"}
+th:not([aria-sort]) .arr::after{content:"↕";opacity:.45}
+.arr{font-size:.7rem}
+tr.best td{background:color-mix(in srgb,var(--lime) 13%,transparent)}
+tr.sel td{background:color-mix(in srgb,var(--sea) 14%,transparent)}
+tr.clickable{cursor:pointer}
+tr.clickable:hover td{background:color-mix(in srgb,var(--sea) 8%,transparent)}
+.pill-best{display:inline-block;background:var(--lime);color:#13310f;font-size:.68rem;font-weight:800;padding:.1rem .45rem;border-radius:999px;margin-left:.35rem;vertical-align:middle;text-transform:uppercase}
+.compare{margin-top:22px;padding:18px}
+.compare-head{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.compare-head h3{font-family:var(--serif);font-size:1.3rem}
+.compare-grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.cmp-col{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--sand)}
+.cmp-col img{aspect-ratio:16/9;object-fit:cover;width:100%}
+.cmp-col .in{padding:12px}
+.cmp-col h4{margin:0 0 .3rem;font-family:var(--serif);font-size:1.1rem}
+.cmp-row{display:flex;justify-content:space-between;gap:8px;font-size:.88rem;padding:.35rem 0;border-top:1px dashed var(--line)}
+.cmp-row span{color:var(--muted)}
+.cmp-row b{text-align:right;font-variant-numeric:tabular-nums}
+.empty{padding:16px;border:2px dashed var(--line);border-radius:14px;color:var(--muted);text-align:center}
+.route{font-weight:700}
+.route small{display:inline-block;margin-left:.35rem;background:var(--sea-deep);color:#fff;font-size:.7rem;padding:.08rem .4rem;border-radius:6px;vertical-align:middle}
+.gf{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 6px}
+.gf a{display:inline-flex;gap:.4rem;align-items:center;text-decoration:none;font-weight:650;color:var(--ink);background:var(--card);border:1px solid var(--line);padding:.55rem .9rem;border-radius:999px;min-height:42px}
+.gf a:hover{border-color:var(--sea);color:var(--sea-ink)}
+.gf small{color:var(--muted);font-weight:500}
+@media (max-width:640px){
+  table.stack thead{display:none}
+  table.stack tr{display:block;border-bottom:1px solid var(--line);padding:.5rem 0}
+  table.stack tbody tr:last-child{border-bottom:0}
+  table.stack td{display:flex;justify-content:space-between;gap:12px;border:0;padding:.35rem .9rem;text-align:right}
+  table.stack td::before{content:attr(data-label);font-weight:700;color:var(--muted);font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;text-align:left;flex:none}
+  table.stack td.num{white-space:normal}
+}
+.est{display:grid;gap:20px;grid-template-columns:1fr}
+@media (min-width:960px){.est{grid-template-columns:1.15fr .85fr;align-items:start}}
+.est-form{padding:20px}
+.field{margin:0 0 18px;border:0;padding:0;min-width:0}
+.field>legend,.lbl{font-weight:700;font-size:.82rem;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-2);margin-bottom:.5rem;padding:0;display:block}
+.pills{display:flex;flex-wrap:wrap;gap:6px}
+.pill{border:1px solid var(--line);background:var(--sand);border-radius:999px;padding:.45rem .85rem;font-weight:600;font-size:.9rem;cursor:pointer;min-height:40px;text-align:left}
+.pill:hover{border-color:var(--sea)}
+.pill[aria-pressed="true"]{background:var(--sea-deep);border-color:var(--sea-deep);color:#fff}
+.pill:disabled{cursor:not-allowed;opacity:.5}
+.row2{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;margin-top:12px}
+.sub-lbl{display:block;font-size:.78rem;font-weight:700;color:var(--muted);margin-bottom:4px}
+.stepper{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--sand)}
+.stepper button{border:0;background:transparent;width:42px;height:42px;font-size:1.2rem;cursor:pointer;font-weight:700}
+.stepper button:hover{background:var(--sand-2)}
+.stepper input{width:44px;text-align:center;border:0;background:transparent;font-weight:700;font-size:1.05rem;-moz-appearance:textfield}
+.stepper input::-webkit-inner-spin-button{-webkit-appearance:none}
+.money-in{display:flex;align-items:center;border:1px solid var(--line);border-radius:12px;background:var(--sand);padding:0 .7rem;min-height:42px;max-width:200px}
+.money-in input{border:0;background:transparent;width:100%;font-weight:700;padding:.5rem .3rem}
+.hint{font-size:.8rem;color:var(--muted);margin:.4rem 0 0}
+.result{padding:22px;position:sticky;top:calc(var(--nav-h) + 14px);background:linear-gradient(160deg,#0b4f5c,#0e6d74);color:#fff;border:0}
+.result .combo{font-size:.88rem;opacity:.88;margin:0 0 .4rem}
+.result .total{font-family:var(--serif);font-size:clamp(2rem,6vw,2.8rem);line-height:1.05;margin:0;font-variant-numeric:tabular-nums}
+.result .total small{display:block;font-family:var(--sans);font-size:.85rem;opacity:.9;margin-top:.25rem}
+.pp{display:flex;gap:10px;margin:14px 0;flex-wrap:wrap}
+.pp div{background:rgba(255,255,255,.12);border-radius:12px;padding:.55rem .8rem;flex:1 1 140px}
+.pp span{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;opacity:.85}
+.pp b{font-size:1.15rem;font-variant-numeric:tabular-nums}
+.breakdown{list-style:none;margin:0;padding:0;font-size:.9rem}
+.breakdown li{display:flex;justify-content:space-between;gap:12px;padding:.5rem 0;border-top:1px solid rgba(255,255,255,.18)}
+.breakdown strong{white-space:nowrap;font-variant-numeric:tabular-nums}
+.est-note{font-size:.85rem;opacity:.92;margin:.6rem 0 0}
+.result .btn-ghost{margin-top:12px}
+.orig-badge{display:inline-block;font-size:.7rem;font-weight:800;background:var(--marigold);color:#3a2500;padding:.1rem .45rem;border-radius:999px;margin-left:.3rem;vertical-align:middle}
+.pill[aria-pressed="true"] .orig-badge{background:#ffd27a}
+.group{margin-top:26px;padding:20px}
+.group h3{font-family:var(--serif);font-size:1.4rem}
+.hh-list{display:grid;gap:10px;margin:12px 0}
+.hh{display:grid;grid-template-columns:1fr 1fr;gap:10px;align-items:end;border:1px solid var(--line);border-radius:14px;padding:12px;background:var(--sand)}
+.hh .full{grid-column:1/-1}
+@media (min-width:900px){.hh{grid-template-columns:1.4fr auto auto 1.2fr 1fr auto}.hh .full{grid-column:auto}}
+.hh input[type=text]{border:1px solid var(--line);border-radius:10px;padding:.5rem .7rem;background:var(--card);min-height:42px;width:100%}
+.hh .tot{font-weight:800;font-variant-numeric:tabular-nums;text-align:right;align-self:center}
+.hh .del{border:0;background:transparent;color:var(--coral-ink);font-weight:700;cursor:pointer;min-height:40px;padding:0 .6rem;align-self:center}
+.group-total{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;border-top:2px solid var(--line);padding-top:12px;margin-top:14px}
+.group-total span{color:var(--ink-2);font-size:.92rem}
+.group-total b{font-family:var(--serif);font-size:1.5rem}
+.check-grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr))}
+.check{padding:18px}
+.check h3{font-family:var(--serif);font-size:1.3rem;display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.check h3 small{font-family:var(--sans);font-size:.8rem;color:var(--muted);font-weight:600}
+.bar{height:8px;background:var(--sand-2);border-radius:99px;overflow:hidden;margin:.6rem 0 .8rem}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--sea),var(--lime));width:0;transition:width .3s}
+.items{list-style:none;margin:0;padding:0}
+.items li{display:flex;align-items:center;gap:10px;padding:.3rem 0;border-bottom:1px dashed var(--line)}
+.items label{flex:1;display:flex;gap:10px;align-items:center;cursor:pointer;min-height:36px}
+.items input[type=checkbox]{width:20px;height:20px;accent-color:var(--sea);flex:none}
+.items input:checked+span{text-decoration:line-through;color:var(--muted)}
+.items .x{border:0;background:transparent;color:var(--muted);cursor:pointer;font-size:1.1rem;width:36px;height:36px;border-radius:8px}
+.items .x:hover{color:var(--coral-ink);background:var(--sand-2)}
+.add-row{display:flex;gap:8px;margin-top:10px}
+.add-row input{flex:1;border:1px solid var(--line);border-radius:10px;padding:.5rem .7rem;background:var(--sand);min-height:42px;min-width:0}
+textarea{width:100%;min-height:150px;border:1px solid var(--line);border-radius:12px;padding:.7rem;background:var(--sand);resize:vertical;margin-top:10px}
+.saved{font-size:.78rem;color:var(--muted);margin:.4rem 0;min-height:1.2em}
+.trip-grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+.trip{overflow:hidden}
+.trip .tin{padding:16px 18px}
+.trip-year{font-family:var(--serif);font-size:2.2rem;color:var(--coral);line-height:1;margin:0 0 .2rem;font-weight:700}
+.trip h3{font-family:var(--serif);font-size:1.3rem}.trip .loc{margin:4px 0 0}
+.album{display:grid;grid-template-columns:repeat(auto-fill,minmax(80px,1fr));gap:6px;margin:10px 0}
+.album:empty{display:none}
+.album .tile{position:relative;aspect-ratio:1;border-radius:10px;overflow:hidden;background:var(--sand-2)}
+.album .tile button.open{all:unset;cursor:pointer;display:block;width:100%;height:100%}
+.album .tile img{width:100%;height:100%;object-fit:cover}
+.album .tile .rm{position:absolute;top:4px;right:4px;border:0;background:rgba(0,0,0,.6);color:#fff;border-radius:50%;width:26px;height:26px;cursor:pointer}
+.trip .cover{all:unset;cursor:zoom-in;display:block;aspect-ratio:4/3;overflow:hidden;width:100%}
+.trip .cover:focus-visible{outline:3px solid var(--marigold);outline-offset:-3px}
+.trip .cover img{width:100%;height:100%;object-fit:cover;object-position:center 30%;transition:transform .4s}
+.trip .cover:hover img{transform:scale(1.03)}
+.trip .btn{margin-top:10px}
+.lock{font-size:.8rem;color:var(--muted);margin:.5rem 0 0}
+.next-trip{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:8px;padding:22px;background:linear-gradient(160deg,color-mix(in srgb,var(--marigold) 25%,var(--card)),var(--card))}
+.lb{position:fixed;inset:0;z-index:200;display:grid;place-items:center;background:rgba(5,15,18,.92);padding:20px}
+.lb[hidden]{display:none}
+.lb figure{margin:0;max-width:min(1100px,100%);display:flex;flex-direction:column;align-items:center;gap:10px}
+.lb img{max-height:80vh;width:auto;border-radius:10px}
+.lb figcaption{color:#fff;font-size:.95rem}
+.lb .lbb{position:fixed;border:0;background:rgba(255,255,255,.16);color:#fff;width:48px;height:48px;border-radius:50%;font-size:1.6rem;cursor:pointer}
+.lb .close{top:16px;right:16px}.lb .prev{left:12px;top:50%}.lb .next{right:12px;top:50%}
+.lb .lbb[hidden]{display:none}
+footer{margin-top:60px;background:#0b4f5c;color:#d9eeee;padding:30px 0 40px;font-size:.9rem}
+.toast{visibility:hidden;position:fixed;bottom:18px;left:50%;transform:translateX(-50%) translateY(120px);background:var(--ink);color:var(--sand);padding:.6rem 1rem;border-radius:999px;font-weight:600;z-index:300;transition:transform .25s}
+.toast.show{visibility:visible;transform:translateX(-50%) translateY(0)}
+@media print{.nav,.hero-actions,.toolbar,.card-actions,.add-row,.items .x,.btn,.gf,.lb,.picado,.group{display:none!important}.hero{min-height:auto;color:#000}.hero::before,.hero>img{display:none}.glass{background:none;border:1px solid #ccc}.result{position:static;background:#fff;color:#000;border:1px solid #ccc}body{background:#fff}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="hero" id="top">
+  <img src="img/hero.webp" alt="Turquoise Caribbean shoreline with palm trees and white-sand beach" fetchpriority="high">
+  <div class="picado" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  <div class="hero-inner">
+    <span class="kicker">🌴 Mexico 2027 · Trip #3</span>
+    <h1>Third Annual Mexico Trip 2027</h1>
+    <p class="sub">6 days / 5 nights, September 21st – 26th</p>
+    <ul class="chips">
+      <li>📅 Tue Sep 21 – Sun Sep 26, 2027</li>
+      <li>✈️ Departing AUS · LAX · SFO</li>
+      <li>🏝️ 6 resorts shortlisted</li>
+    </ul>
+    <div class="hero-grid">
+      <div class="glass">
+        <p class="storm"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 16.2A5.5 5.5 0 0 0 17.5 6h-.4A8 8 0 1 0 4.7 14.9"/><path d="M8 17v4M12 17v6M16 17v4"/></svg>
+        <span>Late September is hurricane season in the Riviera Maya — cheapest rates &amp; flights, but buy trip insurance.</span></p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#costs">Estimate my cost</a>
+          <a class="btn btn-ghost" href="#resorts">See the resorts</a>
+          <button class="btn btn-ghost" type="button" id="ics">📆 Add to calendar</button>
+        </div>
+      </div>
+      <div class="glass">
+        <p class="countdown-label" id="cd-label">Countdown to Sep 21, 2027</p>
+        <div class="countdown" id="countdown" role="timer" aria-labelledby="cd-label">
+          <div><b id="cd-d">–</b><span>days</span></div><div><b id="cd-h">–</b><span>hrs</span></div><div><b id="cd-m">–</b><span>min</span></div><div><b id="cd-s">–</b><span>sec</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<nav class="nav" aria-label="Sections">
+  <div class="nav-inner">
+    <a class="brand" href="#top">🇲🇽 Mexico 2027 <small>Sep 21–26</small></a>
+    <a class="link" href="#resorts">Resorts</a>
+    <a class="link" href="#flights">Flights</a>
+    <a class="link" href="#costs">Cost Estimator</a>
+    <a class="link" href="#checklist">Checklist</a>
+    <a class="link" href="#prev-trips">Previous Trips</a>
+  </div>
+</nav>
+<main id="main" class="wrap">
+  <div class="ins" id="ins-banner" role="region" aria-label="Trip insurance reminder">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    <p id="ins-text"></p>
+    <label><input type="checkbox" id="ins-check"> Insurance bought</label>
+  </div>
+
+  <section id="resorts" aria-labelledby="h-resorts">
+    <div class="sec-head"><span class="sec-num">01</span><h2 id="h-resorts">Top 6 Resorts</h2></div>
+    <p class="lede">The shortlisted all-inclusives, ranked. For the five Cancun-area resorts, each card shows nightly per-room estimates for both room tiers — Standard King and Oceanfront King. Per-household estimates live in the <a href="#costs">cost estimator</a>. Tick <b>Compare</b> on up to 3 resorts to see them side by side.</p>
+    <div class="toolbar">
+      <div class="seg" role="group" aria-label="Filter by coast" id="flt">
+        <button type="button" data-v="all" aria-pressed="true">All 6</button>
+        <button type="button" data-v="caribbean" aria-pressed="false">Caribbean · Cancun area</button>
+        <button type="button" data-v="pacific" aria-pressed="false">Pacific · Los Cabos</button>
+      </div>
+      <div class="tool-group">
+        <label for="sort">Sort</label>
+        <select class="select" id="sort">
+          <option value="rank">Ranking</option>
+          <option value="std">Standard King · low → high</option>
+          <option value="of">Oceanfront / Premium · low → high</option>
+        </select>
+        <div class="seg" role="group" aria-label="View" id="view">
+          <button type="button" data-v="cards" aria-pressed="true">Cards</button>
+          <button type="button" data-v="table" aria-pressed="false">Table</button>
+        </div>
+      </div>
+    </div>
+    <div class="resort-grid" id="resort-grid"></div>
+    <div class="table-wrap" id="resort-table-wrap" hidden>
+      <table class="stack" id="resort-table">
+        <caption class="sr-only">Resort comparison table, nightly per-room estimates. Click a row to load it in the estimator.</caption>
+        <thead><tr>
+          <th scope="col" data-k="rank" aria-sort="ascending"><button class="sort" type="button">Rank <span class="arr"></span></button></th>
+          <th scope="col" data-k="name"><button class="sort" type="button">Resort <span class="arr"></span></button></th>
+          <th scope="col">Location</th>
+          <th scope="col" class="num" data-k="std"><button class="sort" type="button">Standard King / night <span class="arr"></span></button></th>
+          <th scope="col" class="num" data-k="of"><button class="sort" type="button">Oceanfront King / night <span class="arr"></span></button></th>
+          <th scope="col">Why it fits</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="card compare" id="compare" aria-live="polite">
+      <div class="compare-head"><h3>Side-by-side compare</h3><button class="mini" type="button" id="cmp-clear">Clear</button></div>
+      <div id="compare-body"></div>
+    </div>
+    <article class="card alternate">
+      <div class="photo"><img src="img/ziva-pv.webp" alt="Hyatt Ziva Puerto Vallarta Pacific-side beach and palapas" loading="lazy" decoding="async" width="1200" height="800"></div>
+      <div class="rbody">
+        <span class="alt-tag">Alternate</span>
+        <h3>Hyatt Ziva Puerto Vallarta</h3>
+        <p class="loc">📍 Puerto Vallarta · Pacific side</p>
+        <p style="margin:0;color:var(--ink-2)">Pacific-side option with shorter flights from LAX and SFO — worth a look if the Caribbean-side prices sting.</p>
+        <div class="rates" style="grid-template-columns:minmax(0,260px)"><div class="rate"><span>Nightly estimate</span><b>$450–$700</b> <small>/ night est.</small></div></div>
+      </div>
+    </article>
+  </section>
+
+  <section id="flights" aria-labelledby="h-flights">
+    <div class="sec-head"><span class="sec-num">02</span><h2 id="h-flights">Flights by Origin</h2></div>
+    <p class="lede">Typical round-trip fares to Cancun (CUN) per person, Sep 21–26, 2027.</p>
+    <div class="table-wrap">
+      <table class="stack">
+        <thead><tr><th scope="col">Route</th><th scope="col">Flight notes</th><th scope="col" class="num">Sep 21–26, 2027 RT fare</th></tr></thead>
+        <tbody>
+          <tr><td data-label="Route"><span class="route">Austin (AUS) → Cancun<small>CUN</small></span></td><td data-label="Notes">Nonstop available, ~2.5–3 hrs</td><td data-label="RT fare" class="num"><b>$300–$450</b></td></tr>
+          <tr><td data-label="Route"><span class="route">Anaheim (LAX) → Cancun<small>CUN</small></span></td><td data-label="Notes">Limited nonstops, ~5 hrs, often 1 stop</td><td data-label="RT fare" class="num"><b>$350–$500</b></td></tr>
+          <tr><td data-label="Route"><span class="route">SF / San Jose (SFO) → Cancun<small>CUN</small></span></td><td data-label="Notes">Limited nonstops, ~5.5 hrs, often 1 stop</td><td data-label="RT fare" class="num"><b>$400–$550</b></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note" style="margin-top:18px"><strong>Check live fares on Google Flights</strong> (round trip Sep 21–26, 2027):</p>
+    <div class="gf">
+      <a href="https://www.google.com/travel/flights?q=Flights+to+CUN+from+AUS+on+2027-09-21+through+2027-09-26" target="_blank" rel="noopener">AUS → Cancun <span aria-hidden="true">↗</span></a>
+      <a href="https://www.google.com/travel/flights?q=Flights+to+CUN+from+LAX+on+2027-09-21+through+2027-09-26" target="_blank" rel="noopener">LAX → Cancun <span aria-hidden="true">↗</span></a>
+      <a href="https://www.google.com/travel/flights?q=Flights+to+CUN+from+SFO+on+2027-09-21+through+2027-09-26" target="_blank" rel="noopener">SFO → Cancun <span aria-hidden="true">↗</span></a>
+      <a href="https://www.google.com/travel/flights?q=Flights+to+SJD+from+AUS+on+2027-09-21+through+2027-09-26" target="_blank" rel="noopener">AUS → Los Cabos <small>Grand Hyatt folks</small> <span aria-hidden="true">↗</span></a>
+    </div>
+    <p class="note"><strong>Note:</strong> using AUS / LAX / SFO for the most options and best pricing; SNA and SJC are alternates.</p>
+  </section>
+
+  <section id="costs" aria-labelledby="h-costs">
+    <div class="sec-head"><span class="sec-num">03</span><h2 id="h-costs">Cost Estimator</h2></div>
+    <p class="lede">Your household's estimated cost for every resort — dates are set, Sep 21–26, 2027. Pick a resort, a room tier, and a household to see the ballpark. The defaults reproduce the original tracker's math exactly (1 room × 5 nights + $425 blended fare per person).</p>
+    <div class="est">
+      <form class="card est-form" id="est-form" onsubmit="return false">
+        <fieldset class="field"><legend>Resort</legend><div class="pills" id="e-resort"></div></fieldset>
+        <fieldset class="field"><legend>Room tier</legend><div class="pills" id="e-tier"></div></fieldset>
+        <fieldset class="field"><legend>Household</legend>
+          <div class="pills" id="e-hh"></div>
+          <div class="row2">
+            <div><span class="sub-lbl" id="l-ad">Adults</span><div class="stepper" data-for="adults"><button type="button" data-d="-1" aria-label="Fewer adults">−</button><input id="e-adults" type="number" min="1" max="8" value="2" aria-labelledby="l-ad" inputmode="numeric"><button type="button" data-d="1" aria-label="More adults">+</button></div></div>
+            <div><span class="sub-lbl" id="l-kd">Kids</span><div class="stepper" data-for="kids"><button type="button" data-d="-1" aria-label="Fewer kids">−</button><input id="e-kids" type="number" min="0" max="6" value="0" aria-labelledby="l-kd" inputmode="numeric"><button type="button" data-d="1" aria-label="More kids">+</button></div></div>
+            <div><span class="sub-lbl" id="l-rm">Rooms</span><div class="stepper" data-for="rooms"><button type="button" data-d="-1" aria-label="Fewer rooms">−</button><input id="e-rooms" type="number" min="1" max="4" value="1" aria-labelledby="l-rm" inputmode="numeric"><button type="button" data-d="1" aria-label="More rooms">+</button></div></div>
+            <div><span class="sub-lbl" id="l-nt">Nights</span><div class="stepper" data-for="nights"><button type="button" data-d="-1" aria-label="Fewer nights">−</button><input id="e-nights" type="number" min="1" max="14" value="5" aria-labelledby="l-nt" inputmode="numeric"><button type="button" data-d="1" aria-label="More nights">+</button></div></div>
+          </div>
+          <p class="hint">The trip is 5 nights. Kids share the parents' room at no extra room charge (some resorts add a child supplement).</p>
+        </fieldset>
+        <fieldset class="field"><legend>Flights (round trip, per person)</legend>
+          <div class="pills" id="e-fly"></div>
+          <p class="hint" id="fly-hint"></p>
+        </fieldset>
+        <div class="field"><label class="lbl" for="e-extra">Your extras per household (optional)</label>
+          <div class="money-in">$<input id="e-extra" type="number" min="0" step="10" value="0" inputmode="numeric"></div>
+          <p class="hint">Enter your own figure for trip insurance, transfers, tips or excursions — not included by default.</p>
+        </div>
+        <button class="mini" type="button" id="e-reset">↺ Reset to original defaults</button>
+      </form>
+      <div class="card result" aria-live="polite">
+        <p class="combo" id="r-combo"></p>
+        <p class="total" id="r-total"></p>
+        <div class="pp"><div><span>Per traveler</span><b id="r-pp"></b></div><div><span>Room per night</span><b id="r-pn"></b></div></div>
+        <ul class="breakdown" id="r-break"></ul>
+        <p class="est-note" id="r-note"></p>
+        <button class="btn btn-ghost" type="button" id="copy-est">📋 Copy this estimate</button>
+      </div>
+    </div>
+    <p class="note" style="margin-top:18px"><strong>Room tiers:</strong> for the five Cancun-area resorts, <strong>Standard King</strong> uses an entry-level standard room with a king bed and <strong>Oceanfront King</strong> uses an entry-level oceanfront room with a king bed; Grand Velas' Standard King is the Zen Grand Suite, Nature-View — the Zen section's lead-in suite. Grand Hyatt Los Cabos: <strong>Standard King</strong> is the King Bed Ocean View with Balcony ($584/night) and <strong>Premium</strong> is the King Bed Primary Swim-Out Suite ($850/night).</p>
+    <p class="note"><strong>How the math works:</strong> 1 room × 5 nights + blended round-trip fare per person — $425 for Sep 21–26, 2027 — 2 fare shares for a married couple, 3 with 1 kid. For Grand Hyatt Cabo the total is hotel-only; SJD (Los Cabos) flights price separately.</p>
+    <p class="note"><strong>Note:</strong> planning estimates from 2026 observed prices, some verified against Costco Travel's Sep 2027 hotel-only package prices for 2 adults; 2027 rates publish roughly 11 months out.</p>
+
+    <h3 style="font-family:var(--serif);font-size:1.5rem;margin:30px 0 4px" id="glance-title">Per household at a glance</h3>
+    <p class="note" id="glance-sub"></p>
+    <div class="table-wrap">
+      <table class="stack" id="glance">
+        <caption class="sr-only">Per-household totals for every resort with the current estimator settings. Click a row to load it in the estimator.</caption>
+        <thead><tr>
+          <th scope="col" data-k="name"><button class="sort" type="button">Resort <span class="arr"></span></button></th>
+          <th scope="col" class="num" data-k="room"><button class="sort" type="button">Room <span class="arr"></span></button></th>
+          <th scope="col" class="num">Flights</th>
+          <th scope="col" class="num" data-k="total" aria-sort="ascending"><button class="sort" type="button">Total <span class="arr"></span></button></th>
+          <th scope="col" class="num" data-k="pp"><button class="sort" type="button">Per traveler <span class="arr"></span></button></th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <p class="note"><strong>Note:</strong> the child shares the parents' room at no extra room charge; some resorts add a child supplement.</p>
+    <p class="note"><strong>Note:</strong> * Grand Hyatt Cabo totals are hotel-only — brand-new property opening December 2026, no guest reviews yet. The site's flight fares are Cancun-based; Cabo (SJD) flights price separately.</p>
+
+    <div class="card group" id="group">
+      <h3>Group planner</h3>
+      <p class="note" style="margin-top:4px">Add each household in the group to total up the trip for the resort, room tier and nights picked above (1 room per household). Names are placeholders — rename them. Saved on this device only.</p>
+      <div class="hh-list" id="hh-list"></div>
+      <button class="btn btn-soft" type="button" id="hh-add">+ Add household</button>
+      <div class="group-total"><span id="g-sum-lbl">Group total</span><b id="g-sum"></b></div>
+    </div>
+  </section>
+
+  <section id="checklist" aria-labelledby="h-check">
+    <div class="sec-head"><span class="sec-num">04</span><h2 id="h-check">Checklist &amp; Packing</h2></div>
+    <p class="lede">A starter to-do and packing list — edit freely. Everything here saves automatically in this browser (localStorage) and isn't shared with the group.</p>
+    <div class="check-grid">
+      <div class="card check" data-list="todo">
+        <h3>Before you go <small class="count"></small></h3>
+        <div class="bar"><i></i></div>
+        <ul class="items"></ul>
+        <form class="add-row"><input type="text" placeholder="Add a to-do…" aria-label="Add a to-do"><button class="btn btn-soft" type="submit">Add</button></form>
+      </div>
+      <div class="card check" data-list="pack">
+        <h3>Packing list <small class="count"></small></h3>
+        <div class="bar"><i></i></div>
+        <ul class="items"></ul>
+        <form class="add-row"><input type="text" placeholder="Add an item…" aria-label="Add a packing item"><button class="btn btn-soft" type="submit">Add</button></form>
+      </div>
+      <div class="card check">
+        <h3>My trip notes</h3>
+        <label class="sr-only" for="notes">Trip notes</label>
+        <textarea id="notes" placeholder="Add your notes — confirmation numbers, insurance policy #, room requests, who's flying from where…"></textarea>
+        <p class="saved" id="notes-saved"></p>
+        <button class="mini" type="button" id="reset-lists">↺ Reset lists to starter items</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="prev-trips" aria-labelledby="h-prev">
+    <div class="sec-head"><span class="sec-num">05</span><h2 id="h-prev">Previous Trips</h2></div>
+    <p class="lede">This is the 3rd annual trip — a look back at the two before it.</p>
+    <div class="trip-grid" id="trip-grid"></div>
+    <p class="note">Want trip photos on the shared page for everyone to see? Send them to the trip organizer and they'll be added.</p>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p>Prices are planning estimates from 2026 observed rates; 2027 rates publish about 11 months out. Built for the Mexico 2027 trip group.</p>
+    <p style="opacity:.8;font-size:.82rem">Checklist, notes, group planner and added photos are stored only in your browser on this device.</p>
+  </div>
+</footer>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+  <button class="lbb close" id="lb-close" aria-label="Close viewer">×</button>
+  <button class="lbb prev" id="lb-prev" aria-label="Previous photo">‹</button>
+  <figure><img id="lb-img" alt=""><figcaption id="lb-cap"></figcaption></figure>
+  <button class="lbb next" id="lb-next" aria-label="Next photo">›</button>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<script>
+(function(){
+"use strict";
+var $=function(s,c){return (c||document).querySelector(s)},$$=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
+var store={get:function(k,d){try{var v=localStorage.getItem("mx27:"+k);return v==null?d:JSON.parse(v)}catch(e){return d}},set:function(k,v){try{localStorage.setItem("mx27:"+k,JSON.stringify(v))}catch(e){}}};
+function money(n){return "$"+Math.round(n).toLocaleString("en-US")}
+function range(a,b){return Math.round(a)===Math.round(b)?money(a):money(a)+"–"+money(b)}
+function toast(t){var el=$("#toast");el.textContent=t;el.classList.add("show");clearTimeout(toast._t);toast._t=setTimeout(function(){el.classList.remove("show")},1800)}
+function esc(s){return String(s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
+
+/* ===== DATA — verbatim from the original Muse trip tracker ===== */
+var RESORTS=[
+ {id:"grand-velas",rank:1,badge:"Top pick · #1",name:"Grand Velas Riviera Maya",short:"Grand Velas",loc:"Playa del Carmen · Ambassador section",coast:"caribbean",img:"img/grand-velas.webp",alt:"Grand Velas Riviera Maya resort pool and suites at dusk",
+  family:"Ambassador section built for families, kids’ & teens’ clubs, huge suites.",food:"AAA Five Diamond dining, Cocina de Autor tasting menu, 8 restaurants, 24-hr in-room dining.",why:"Consensus #1 for food — the splurge pick.",
+  stdLow:1400,stdHigh:1450,ofLow:1550,ofHigh:1650,caption:"Standard King is the Zen Grand Suite, Nature-View — the Zen section’s lead-in suite."},
+ {id:"xcaret",rank:2,badge:"#2",name:"Hotel Xcaret México",short:"Hotel Xcaret",loc:"Playa del Carmen",coast:"caribbean",img:"img/xcaret.webp",alt:"Hotel Xcaret Mexico lush grounds and riverfront pools",
+  family:"All-Fun Inclusive — unlimited access to all Xcaret eco-parks, kids splash areas.",food:"Strong multi-restaurant program, 24-hr room service.",why:"Parks included = huge value with kids.",stdLow:1050,stdHigh:1100,ofLow:1500,ofHigh:1600},
+ {id:"finest",rank:3,badge:"#3",name:"Finest Playa Mujeres",short:"Finest Playa Mujeres",loc:"Playa Mujeres, Cancun",coast:"caribbean",img:"img/finest.webp",alt:"Finest Playa Mujeres beachfront pools at sunset",
+  family:"Excellence Group’s family brand, premium personalized service, kids clubs.",food:"Excellent varied dining, highly rated.",why:"Upscale family feel without mega-resort chaos.",stdLow:350,stdHigh:450,ofLow:500,ofHigh:650},
+ {id:"ziva",rank:4,badge:"#4",name:"Hyatt Ziva Cancun",short:"Hyatt Ziva Cancun",loc:"Cancun Hotel Zone",coast:"caribbean",img:"img/hyatt-ziva.webp",alt:"Hyatt Ziva Cancun beach with umbrellas and turquoise water",
+  family:"Consistently top-rated family all-inclusive, great pools, ocean on three sides.",food:"Quality dining across many outlets.",why:"Best all-around family experience in the Hotel Zone.",stdLow:600,stdHigh:650,ofLow:650,ofHigh:750},
+ {id:"moon",rank:5,badge:"#5",name:"Moon Palace The Grand",short:"Moon Palace",loc:"Cancun",coast:"caribbean",img:"img/moon-palace.webp",alt:"Moon Palace The Grand sprawling pools overlooking the ocean",
+  family:"Most complete water park of any Mexico all-inclusive — wave pools, surf simulator.",food:"40+ restaurants, no reservations needed, 24/7 room service.",why:"Best value for a big group.",stdLow:700,stdHigh:800,ofLow:850,ofHigh:950},
+ {id:"gh-cabo",rank:6,badge:"Brand new — opens Dec 2026",isNew:true,name:"Grand Hyatt Los Cabos Resort, Golf & Spa",short:"Grand Hyatt Cabo",loc:"Cabo San Lucas · Pacific coast",coast:"pacific",img:"img/grand-hyatt-cabo.webp",alt:"Artist rendering of the Grand Hyatt Los Cabos resort courtyard with cacti and desert landscaping",
+  family:"Kids’ splash park and family infinity pools alongside adults-only areas — yes, family-friendly.",food:"Chef-driven à la carte dining across 11 venues — beachfront Mexican, pan-Asian, Italian, steakhouse, market café — plus 5 bars with a rooftop lounge and speakeasy.",
+  resort:"301 rooms & suites (42 swim-out), 6 pools, an 18-hole Ernie Els golf course, and a Baja-inspired spa with a complimentary temazcal ritual. Hyatt’s first-ever all-inclusive Grand Hyatt.",
+  why:"Pacific-side wildcard — brand-new rooms, elite golf, and spa.",stdLow:584,stdHigh:584,ofLow:850,ofHigh:850,cabo:true,stdTier:"Standard King",ofTier:"Premium",stdRoom:"King Bed Ocean View with Balcony",ofRoom:"King Bed Primary Swim-Out Suite"}
+];
+var FLY=[
+ {id:"blended",label:"Blended $425",low:425,high:425,orig:true},
+ {id:"AUS",label:"AUS $300–$450",low:300,high:450},
+ {id:"LAX",label:"LAX $350–$500",low:350,high:500},
+ {id:"SFO",label:"SFO $400–$550",low:400,high:550},
+ {id:"none",label:"Hotel only",low:0,high:0}
+];
+var TIERS=[{id:"standard",label:"Standard King",basis:"standard room, king bed"},{id:"oceanfront",label:"Oceanfront King",basis:"oceanfront room, king bed"}];
+var HH_PRESETS=[{id:"couple",full:"Married couple (2 adults)",a:2,k:0},{id:"couple-kid",full:"Married couple + 1 kid",a:2,k:1}];
+var TRIPS=[
+ {id:"t2025",year:"2025",resort:"Atelier Playa Mujeres",loc:"Playa Mujeres, Mexico",photo:"img/trip-2025-group.webp",caption:"2025 group at Atelier Playa Mujeres"},
+ {id:"t2026",year:"2026",resort:"Secrets Playa Blanca Costa Mujeres",loc:"Costa Mujeres, Mexico",photo:"img/trip-2026-group.webp",caption:"2026 group at Secrets Playa Blanca"}
+];
+function lowOf(r,t){return t==="standard"?r.stdLow:r.ofLow}
+function highOf(r,t){return t==="standard"?r.stdHigh:r.ofHigh}
+function tierName(r,t){return t==="standard"?(r.stdTier||"Standard King"):(r.ofTier||"Oceanfront King")}
+function byId(id){return RESORTS.find(function(r){return r.id===id})}
+
+/* ===== COUNTDOWN + calendar ===== */
+var TRIP=new Date(2027,8,21,0,0,0);
+function tick(){var ms=TRIP-new Date();if(ms<=0){$("#countdown").innerHTML='<div style="grid-column:1/-1"><b>¡Vámonos!</b><span>trip time</span></div>';return}
+ var s=Math.floor(ms/1000);$("#cd-d").textContent=Math.floor(s/86400);$("#cd-h").textContent=String(Math.floor(s%86400/3600)).padStart(2,"0");$("#cd-m").textContent=String(Math.floor(s%3600/60)).padStart(2,"0");$("#cd-s").textContent=String(s%60).padStart(2,"0")}
+tick();setInterval(tick,1000);
+$("#ics").addEventListener("click",function(){
+ var ics=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Mexico 2027//EN","BEGIN:VEVENT","UID:mexico-2027-trip@local","DTSTAMP:20260101T000000Z","DTSTART;VALUE=DATE:20270921","DTEND;VALUE=DATE:20270927","SUMMARY:Third Annual Mexico Trip 2027","DESCRIPTION:6 days / 5 nights\\, Sept 21-26. Buy trip insurance (hurricane season).","END:VEVENT","END:VCALENDAR"].join("\r\n");
+ var a=document.createElement("a");a.href=URL.createObjectURL(new Blob([ics],{type:"text/calendar"}));a.download="mexico-trip-2027.ics";document.body.appendChild(a);a.click();a.remove();toast("Calendar file downloaded")});
+
+/* ===== RESORTS: cards / table / filter / sort / compare ===== */
+var rState={flt:"all",sort:"rank",view:"cards",tsort:{k:"rank",dir:1}};
+var compareIds=store.get("compare",[]);
+function rateHTML(label,lo,hi){return '<div class="rate"><span>'+esc(label)+'</span><b>'+range(lo,hi)+'</b> <small>/ night</small></div>'}
+function filtered(){var list=RESORTS.filter(function(r){return rState.flt==="all"||r.coast===rState.flt});var k=rState.sort;
+ return list.sort(function(a,b){return k==="rank"?a.rank-b.rank:k==="std"?a.stdLow-b.stdLow:a.ofLow-b.ofLow})}
+function renderCards(){var g=$("#resort-grid");g.innerHTML=filtered().map(function(r){var on=compareIds.indexOf(r.id)>-1;
+ return '<article class="card resort'+(on?" is-compared":"")+'" id="r-'+r.id+'"><div class="photo"><span class="badge'+(r.rank===1?" top":"")+(r.isNew?" new":"")+'">'+esc(r.badge)+'</span><span class="coast">'+(r.coast==="pacific"?"Pacific":"Caribbean")+'</span><img src="'+r.img+'" alt="'+esc(r.alt)+'" loading="lazy"></div>'+
+ '<div class="rbody"><h3>'+esc(r.name)+'</h3><p class="loc">📍 '+esc(r.loc)+'</p><dl class="facts"><dt>Family</dt><dd>'+esc(r.family)+'</dd><dt>Food</dt><dd>'+esc(r.food)+'</dd>'+(r.resort?'<dt>Resort</dt><dd>'+esc(r.resort)+'</dd>':'')+'</dl>'+
+ '<div class="why"><strong>Why it fits:</strong> '+esc(r.why)+'</div><div class="rates">'+(r.cabo?rateHTML(r.stdRoom,r.stdLow,r.stdHigh)+rateHTML(r.ofRoom,r.ofLow,r.ofHigh):rateHTML("Standard King",r.stdLow,r.stdHigh)+rateHTML("Oceanfront King",r.ofLow,r.ofHigh))+'</div>'+
+ (r.caption?'<p class="caption">'+esc(r.caption)+'</p>':'')+
+ '<div class="card-actions"><label class="cmp-toggle"><input type="checkbox" data-cmp="'+r.id+'"'+(on?" checked":"")+'> Compare</label><button class="mini" type="button" data-est="'+r.id+'">Estimate cost →</button></div></div></article>'}).join("")}
+function renderRTable(){var k=rState.tsort.k,d=rState.tsort.dir;
+ var list=filtered().slice().sort(function(a,b){var v=k==="name"?a.name.localeCompare(b.name):k==="std"?a.stdLow-b.stdLow:k==="of"?a.ofLow-b.ofLow:a.rank-b.rank;return v*d});
+ $("#resort-table tbody").innerHTML=list.map(function(r){return '<tr class="clickable" data-est="'+r.id+'" tabindex="0"><td data-label="Rank">#'+r.rank+'</td><td data-label="Resort"><b>'+esc(r.name)+'</b>'+(r.isNew?' <span class="pill-best" style="background:#7b47c9;color:#fff">New</span>':'')+'</td><td data-label="Location">'+esc(r.loc)+'</td><td data-label="Standard King" class="num">'+range(r.stdLow,r.stdHigh)+(r.cabo?'<br><small>'+esc(r.stdRoom)+'</small>':'')+'</td><td data-label="Oceanfront King" class="num">'+range(r.ofLow,r.ofHigh)+(r.cabo?'<br><small>'+esc(r.ofRoom)+' (Premium)</small>':'')+'</td><td data-label="Why it fits">'+esc(r.why)+'</td></tr>'}).join("");
+ $$("#resort-table th[data-k]").forEach(function(th){if(th.dataset.k===k)th.setAttribute("aria-sort",d>0?"ascending":"descending");else th.removeAttribute("aria-sort")})}
+function renderCompare(){var body=$("#compare-body"),list=compareIds.map(byId).filter(Boolean);$("#cmp-clear").hidden=!list.length;
+ if(!list.length){body.innerHTML='<div class="empty">Tick “Compare” on up to 3 resort cards (or table rows) to see them side by side here, with your household total.</div>';return}
+ var t=est.tier,f=FLY.find(function(x){return x.id===est.fly});
+ function row(l,v,plain){return '<div class="cmp-row"><span>'+l+'</span><b'+(plain?' style="font-weight:500;max-width:64%"':'')+'>'+v+'</b></div>'}
+ body.innerHTML='<div class="compare-grid">'+list.map(function(r){var c=calc(r);return '<div class="cmp-col"><img src="'+r.img+'" alt="" loading="lazy"><div class="in"><h4>'+esc(r.name)+'</h4><p class="loc" style="margin:0 0 6px">'+esc(r.loc)+'</p>'+
+  row("Rank",esc(r.badge))+row("Standard King",range(r.stdLow,r.stdHigh)+"/night")+row(r.cabo?"Premium":"Oceanfront King",range(r.ofLow,r.ofHigh)+"/night")+
+  row("Your household · "+esc(tierName(r,t)),range(c.lo,c.hi)+(r.cabo?"*":""))+row("Family",esc(r.family),1)+row("Food",esc(r.food),1)+row("Why",esc(r.why),1)+'</div></div>'}).join("")+'</div>'+
+  (list.some(function(r){return r.cabo})?'<p class="note">* Grand Hyatt Cabo totals are hotel-only; SJD flights price separately.</p>':'')+
+  '<p class="note">Household totals use the estimator settings below ('+esc(hhLabel())+', '+est.rooms+' room'+(est.rooms>1?"s":"")+', '+est.nights+' nights, flights: '+esc(f.label)+').</p>'}
+function renderResorts(){var cards=rState.view==="cards";$("#resort-grid").hidden=!cards;$("#resort-table-wrap").hidden=cards;if(cards)renderCards();else renderRTable();renderCompare()}
+function seg(id,key){$$("#"+id+" button").forEach(function(b){b.addEventListener("click",function(){rState[key]=b.dataset.v;$$("#"+id+" button").forEach(function(x){x.setAttribute("aria-pressed",x===b?"true":"false")});renderResorts()})})}
+seg("flt","flt");seg("view","view");
+$("#sort").addEventListener("change",function(e){rState.sort=e.target.value;rState.tsort={k:rState.sort,dir:1};renderResorts()});
+$$("#resort-table th[data-k] button").forEach(function(b){b.addEventListener("click",function(){var k=b.parentNode.dataset.k;rState.tsort.dir=rState.tsort.k===k?-rState.tsort.dir:1;rState.tsort.k=k;renderRTable()})});
+document.addEventListener("change",function(e){var id=e.target.dataset&&e.target.dataset.cmp;if(!id)return;
+ if(e.target.checked){if(compareIds.length>=3){e.target.checked=false;toast("Compare up to 3 at a time");return}compareIds.push(id)}else compareIds=compareIds.filter(function(x){return x!==id});
+ store.set("compare",compareIds);var art=$("#r-"+id);if(art)art.classList.toggle("is-compared",e.target.checked);renderCompare()});
+$("#cmp-clear").addEventListener("click",function(){compareIds=[];store.set("compare",compareIds);renderResorts()});
+function pickResort(id,scroll){if(!byId(id))return;est.resort=id;saveEst();renderEst();if(scroll)$("#costs").scrollIntoView()}
+document.addEventListener("click",function(e){var t=e.target.closest("[data-est]");if(t)pickResort(t.dataset.est,!t.closest("#glance"))});
+document.addEventListener("keydown",function(e){if(e.key==="Enter"&&e.target.matches&&e.target.matches("tr[data-est]"))pickResort(e.target.dataset.est,!e.target.closest("#glance"))});
+/* ===== ESTIMATOR ===== */
+var DEF={resort:"grand-velas",tier:"oceanfront",adults:2,kids:0,rooms:1,nights:5,fly:"blended",extra:0};
+var est=Object.assign({},DEF,store.get("est",{}));
+function saveEst(){store.set("est",est)}
+/* Same formula as the original: rooms × nightly × nights + travelers × RT fare; Grand Hyatt Cabo = hotel-only. */
+function calc(r,o){o=o||est;var t=o.tier,ppl=o.adults+o.kids,f=FLY.find(function(x){return x.id===o.fly})||FLY[0];
+ var roomLo=lowOf(r,t)*o.nights*o.rooms,roomHi=highOf(r,t)*o.nights*o.rooms,flyLo=r.cabo?0:f.low*ppl,flyHi=r.cabo?0:f.high*ppl,x=+o.extra||0;
+ return {roomLo:roomLo,roomHi:roomHi,flyLo:flyLo,flyHi:flyHi,lo:roomLo+flyLo+x,hi:roomHi+flyHi+x,ppl:ppl,extra:x,f:f}}
+function pills(el,items,cur,label,onPick){el.innerHTML="";items.forEach(function(it){var b=document.createElement("button");b.type="button";b.className="pill";b.dataset.id=it.id;b.innerHTML=label(it);b.setAttribute("aria-pressed",it.id===cur?"true":"false");b.addEventListener("click",function(){onPick(it)});el.appendChild(b)})}
+function hhPresetId(){var p=HH_PRESETS.find(function(h){return h.a===est.adults&&h.k===est.kids});return p?p.id:"custom"}
+function hhLabel(){var p=HH_PRESETS.find(function(h){return h.id===hhPresetId()});return p?p.full:est.adults+" adult"+(est.adults>1?"s":"")+(est.kids?" + "+est.kids+" kid"+(est.kids>1?"s":""):"")}
+function isDefault(){return est.adults===2&&est.kids<=1&&est.rooms===1&&est.nights===5&&est.fly==="blended"&&!+est.extra}
+function renderEst(){
+ var r=byId(est.resort)||RESORTS[0];est.resort=r.id;
+ pills($("#e-resort"),RESORTS,est.resort,function(x){return esc(x.short)},function(x){est.resort=x.id;saveEst();renderEst()});
+ pills($("#e-tier"),TIERS,est.tier,function(t){if(!r.cabo)return t.label;var s=t.id==="standard";return esc((s?r.stdRoom:r.ofRoom)+" · "+money(s?r.stdLow:r.ofLow)+"/night")},function(t){est.tier=t.id;saveEst();renderEst()});
+ pills($("#e-hh"),HH_PRESETS.concat([{id:"custom",full:"Custom"}]),hhPresetId(),function(h){return esc(h.full)},function(h){if(h.id==="custom"){est.kids=Math.min(6,est.kids+1);if(hhPresetId()!=="custom")est.kids=2;saveEst();renderEst();return}est.adults=h.a;est.kids=h.k;saveEst();renderEst()});
+ pills($("#e-fly"),FLY,est.fly,function(f){return esc(f.label)+(f.orig?'<span class="orig-badge">original</span>':'')},function(f){est.fly=f.id;saveEst();renderEst()});
+ $$("#e-fly .pill").forEach(function(b){b.disabled=!!r.cabo});
+ $("#fly-hint").textContent=r.cabo?"Grand Hyatt Cabo flies into SJD (Los Cabos) — its total is hotel-only; SJD flights price separately.":"Blended $425/person is the original tracker's figure. Per-origin options use the Cancun fare ranges from the Flights table.";
+ $("#e-adults").value=est.adults;$("#e-kids").value=est.kids;$("#e-rooms").value=est.rooms;$("#e-nights").value=est.nights;if(document.activeElement!==$("#e-extra"))$("#e-extra").value=est.extra||0;
+ var c=calc(r),tn=tierName(r,est.tier);
+ $("#r-combo").textContent=r.name+" · September 21–26, 2027 (Tue–Sun) · "+hhLabel()+" · "+tn;
+ $("#r-total").innerHTML=range(c.lo,c.hi)+"<small>"+(r.cabo?"hotel only · SJD flights priced separately":"per household")+(isDefault()?' · <span class="orig-badge">same math as original</span>':'')+"</small>";
+ $("#r-pp").textContent=range(c.lo/c.ppl,c.hi/c.ppl);
+ $("#r-pn").textContent=range(lowOf(r,est.tier)*est.rooms,highOf(r,est.tier)*est.rooms);
+ var rows=[[est.rooms+" room"+(est.rooms>1?"s":"")+" × "+est.nights+" nights ("+(r.cabo?(est.tier==="standard"?r.stdRoom:r.ofRoom):TIERS.find(function(t){return t.id===est.tier}).basis)+") at "+range(lowOf(r,est.tier),highOf(r,est.tier)),range(c.roomLo,c.roomHi)]];
+ if(r.cabo)rows.push(["RT flights to SJD (Los Cabos)","priced separately"]);
+ else if(est.fly==="none")rows.push(["Flights","not included"]);
+ else rows.push([c.ppl+" × "+range(c.f.low,c.f.high)+" RT flights ("+(est.fly==="blended"?"blended":est.fly+" → CUN")+", Sep 21–26, 2027)",range(c.flyLo,c.flyHi)]);
+ if(c.extra)rows.push(["Your extras",money(c.extra)]);
+ $("#r-break").innerHTML=rows.map(function(x){return "<li><span>"+esc(x[0])+"</span><strong>"+esc(x[1])+"</strong></li>"}).join("");
+ var notes=[];if(r.cabo)notes.push(tn+" is the "+(est.tier==="standard"?r.stdRoom:r.ofRoom)+" — "+money(lowOf(r,est.tier))+"/night. Brand-new property opening Dec 2026, no guest reviews yet.");
+ if(r.id==="grand-velas"&&est.tier==="standard")notes.push("Standard King is the Zen Grand Suite, Nature-View — the Zen section's lead-in suite.");
+ if(est.kids)notes.push("Kids share the parents' room at no extra room charge; some resorts add a child supplement.");
+ $("#r-note").textContent=notes.join(" ");
+ renderGlance();renderCompare();renderGroup()}
+$$(".stepper[data-for]").forEach(function(s){var key=s.dataset.for,inp=$("input",s);function set(v){var mn=+inp.min,mx=+inp.max;v=Math.max(mn,Math.min(mx,parseInt(v,10)||mn));est[key]=v;saveEst();renderEst()}
+ $$("button",s).forEach(function(b){b.addEventListener("click",function(){set(est[key]+(+b.dataset.d))})});inp.addEventListener("change",function(){set(inp.value)})});
+$("#e-extra").addEventListener("input",function(e){est.extra=Math.max(0,+e.target.value||0);saveEst();renderEst()});
+$("#e-reset").addEventListener("click",function(){est=Object.assign({},DEF);saveEst();renderEst();toast("Back to the original defaults")});
+$("#copy-est").addEventListener("click",function(){var txt=$("#r-combo").textContent+"\n"+$("#r-total").textContent+"\nPer traveler: "+$("#r-pp").textContent+"\n"+$$("#r-break li").map(function(l){return "• "+l.children[0].textContent+": "+l.children[1].textContent}).join("\n");
+ (navigator.clipboard?navigator.clipboard.writeText(txt):Promise.reject()).then(function(){toast("Estimate copied")},function(){window.prompt("Copy this estimate:",txt)})});
+
+/* at-a-glance table */
+var gSort={k:"total",dir:1};
+function renderGlance(){var t=TIERS.find(function(x){return x.id===est.tier}),f=FLY.find(function(x){return x.id===est.fly});
+ $("#glance-title").textContent="Per household at a glance · "+hhLabel();
+ $("#glance-sub").textContent="Room tier: "+t.label+" ("+t.basis+"). Dates are set: Sep 21–26, 2027 — "+est.rooms+" room × "+est.nights+" nights + "+(est.adults+est.kids)+" × "+(est.fly==="blended"?"per-person blended RT fare ($425)":f.label)+". Grand Hyatt Cabo totals are hotel-only; SJD flights price separately. Click a row to load it above.";
+ var rows=RESORTS.map(function(r){return {r:r,c:calc(r)}});
+ var best=rows.filter(function(x){return !x.r.cabo}).reduce(function(m,x){return !m||x.c.lo<m.c.lo?x:m},null);
+ var k=gSort.k,d=gSort.dir;rows.sort(function(a,b){var v=k==="name"?a.r.short.localeCompare(b.r.short):k==="room"?a.c.roomLo-b.c.roomLo:k==="pp"?a.c.lo/a.c.ppl-b.c.lo/b.c.ppl:a.c.lo-b.c.lo;return v*d});
+ $("#glance tbody").innerHTML=rows.map(function(x){var r=x.r,c=x.c,isB=best&&r.id===best.r.id;return '<tr class="clickable'+(r.id===est.resort?" sel":"")+(isB?" best":"")+'" data-est="'+r.id+'" tabindex="0"><td data-label="Resort"><b>'+esc(r.short)+(r.cabo?" *":"")+'</b>'+(isB?'<span class="pill-best">Lowest</span>':'')+(r.cabo?'<br><small>'+esc(tierName(r,est.tier))+'</small>':'')+'</td><td data-label="Room" class="num">'+range(c.roomLo,c.roomHi)+'</td><td data-label="Flights" class="num">'+(r.cabo?"SJD priced separately":est.fly==="none"?"—":range(c.flyLo,c.flyHi))+'</td><td data-label="Total" class="num"><b>'+range(c.lo,c.hi)+'</b></td><td data-label="Per traveler" class="num">'+range(c.lo/c.ppl,c.hi/c.ppl)+'</td></tr>'}).join("");
+ $$("#glance th[data-k]").forEach(function(th){if(th.dataset.k===k)th.setAttribute("aria-sort",d>0?"ascending":"descending");else th.removeAttribute("aria-sort")})}
+$$("#glance th[data-k] button").forEach(function(b){b.addEventListener("click",function(){var k=b.parentNode.dataset.k;gSort.dir=gSort.k===k?-gSort.dir:1;gSort.k=k;renderGlance()})});
+
+/* group planner */
+var group=store.get("group",[{name:"Household 1 (rename me)",adults:2,kids:0,fly:"blended"}]);
+function renderGroup(){var r=byId(est.resort),el=$("#hh-list"),sumLo=0,sumHi=0,ppl=0;
+ el.innerHTML=group.map(function(h,i){var c=calc(r,{tier:est.tier,adults:h.adults,kids:h.kids,rooms:1,nights:est.nights,fly:h.fly,extra:0});sumLo+=c.lo;sumHi+=c.hi;ppl+=c.ppl;
+  function st(k,v,mn){return '<div><span class="sub-lbl">'+(k==="adults"?"Adults":"Kids")+'</span><div class="stepper"><button type="button" data-gi="'+i+'" data-gs="'+k+'" data-d="-1" aria-label="Fewer '+k+'">−</button><input type="number" readonly tabindex="-1" value="'+v+'" aria-label="'+k+'"><button type="button" data-gi="'+i+'" data-gs="'+k+'" data-d="1" aria-label="More '+k+'">+</button></div></div>'}
+  return '<div class="hh"><div class="full"><label class="sub-lbl" for="g-n'+i+'">Household name</label><input type="text" id="g-n'+i+'" data-gi="'+i+'" data-gf="name" value="'+esc(h.name)+'"></div>'+st("adults",h.adults)+st("kids",h.kids)+
+  '<div class="full"><label class="sub-lbl" for="g-f'+i+'">Flights</label><select class="select" id="g-f'+i+'" data-gi="'+i+'" data-gf="fly" style="width:100%"'+(r.cabo?" disabled":"")+'>'+FLY.map(function(f){return '<option value="'+f.id+'"'+(f.id===h.fly?" selected":"")+'>'+esc(f.label)+'</option>'}).join("")+'</select></div>'+
+  '<div class="tot">'+range(c.lo,c.hi)+'</div><button class="del" type="button" data-gdel="'+i+'" aria-label="Remove household '+(i+1)+'">Remove</button></div>'}).join("")||'<div class="empty">No households yet — add one.</div>';
+ $("#g-sum-lbl").textContent="Group total · "+group.length+" household"+(group.length===1?"":"s")+", "+ppl+" travelers · "+r.short+" · "+tierName(r,est.tier)+" · "+est.nights+" nights"+(r.cabo?" (hotel only)":"");
+ $("#g-sum").textContent=group.length?range(sumLo,sumHi):"$0"}
+$("#hh-list").addEventListener("input",function(e){var i=e.target.dataset.gi;if(i!=null&&e.target.dataset.gf==="name"){group[i].name=e.target.value;store.set("group",group)}});
+$("#hh-list").addEventListener("change",function(e){var i=e.target.dataset.gi;if(i!=null&&e.target.dataset.gf==="fly"){group[i].fly=e.target.value;store.set("group",group);renderGroup()}});
+$("#hh-list").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;
+ if(b.dataset.gdel!=null)group.splice(+b.dataset.gdel,1);else if(b.dataset.gs){var h=group[b.dataset.gi],k=b.dataset.gs;h[k]=Math.max(k==="adults"?1:0,Math.min(8,h[k]+(+b.dataset.d)))}else return;
+ store.set("group",group);renderGroup();var nb=$('[data-gi="'+b.dataset.gi+'"][data-gs="'+b.dataset.gs+'"][data-d="'+b.dataset.d+'"]');if(nb)nb.focus()});
+$("#hh-add").addEventListener("click",function(){group.push({name:"Household "+(group.length+1)+" (rename me)",adults:2,kids:0,fly:"blended"});store.set("group",group);renderGroup();var n=$("#g-n"+(group.length-1));if(n)n.focus()});
+
+/* ===== INSURANCE + CHECKLISTS ===== */
+var STARTER={
+ todo:[{t:"Buy trip insurance (hurricane season)",ins:true},{t:"Pick the resort"},{t:"Book the resort"},{t:"Book flights"},{t:"Check passports are valid"},{t:"Watch for 2027 rates (publish ~11 months out)"},{t:"Share flight details with the group"}],
+ pack:[{t:"Passport"},{t:"Swimsuits"},{t:"Sunscreen"},{t:"Sunglasses & hat"},{t:"Medications"},{t:"Phone chargers"},{t:"Light rain jacket"}]};
+function getList(n){var l=store.get("list:"+n,null);if(!l){l=STARTER[n].map(function(x){return {t:x.t,done:n==="todo"&&x.ins?store.get("insurance",false):false,ins:!!x.ins}});store.set("list:"+n,l)}return l}
+function setInsurance(on){store.set("insurance",on);var l=getList("todo");l.forEach(function(i){if(i.ins)i.done=on});store.set("list:todo",l);renderIns();renderList("todo")}
+function renderIns(){var on=store.get("insurance",false);$("#ins-check").checked=on;$("#ins-banner").classList.toggle("done",on);
+ $("#ins-text").innerHTML=on?"<strong>✓ Trip insurance bought.</strong> Keep the policy details in your trip notes below.":"<strong>Trip insurance reminder:</strong> late September is hurricane season — the original tracker says to buy trip insurance. Tick this once you have it."}
+$("#ins-check").addEventListener("change",function(e){setInsurance(e.target.checked);toast(e.target.checked?"Insurance marked as bought":"Insurance reminder back on")});
+function renderList(n){var box=$('[data-list="'+n+'"]'),l=getList(n),done=l.filter(function(i){return i.done}).length;
+ $(".count",box).textContent=done+" / "+l.length+" done";$(".bar i",box).style.width=(l.length?done/l.length*100:0)+"%";
+ $(".items",box).innerHTML=l.map(function(it,i){return '<li><label><input type="checkbox" data-li="'+i+'"'+(it.done?" checked":"")+'><span>'+(it.ins?"🛡️ ":"")+esc(it.t)+'</span></label><button class="x" type="button" data-lx="'+i+'" aria-label="Remove '+esc(it.t)+'">×</button></li>'}).join("")||'<li class="placeholder">Nothing here — add your own items.</li>'}
+["todo","pack"].forEach(function(n){var box=$('[data-list="'+n+'"]');renderList(n);
+ box.addEventListener("change",function(e){var i=e.target.dataset.li;if(i==null)return;var l=getList(n);l[i].done=e.target.checked;store.set("list:"+n,l);if(l[i].ins)setInsurance(e.target.checked);else renderList(n)});
+ box.addEventListener("click",function(e){var i=e.target.dataset.lx;if(i==null)return;var l=getList(n);l.splice(+i,1);store.set("list:"+n,l);renderList(n)});
+ $("form",box).addEventListener("submit",function(e){e.preventDefault();var inp=$("input",e.target),v=inp.value.trim();if(!v)return;var l=getList(n);l.push({t:v,done:false});store.set("list:"+n,l);inp.value="";renderList(n)})});
+$("#reset-lists").addEventListener("click",function(){if(!window.confirm("Reset both lists to the starter items? Your custom items will be removed."))return;localStorage.removeItem("mx27:list:todo");localStorage.removeItem("mx27:list:pack");renderList("todo");renderList("pack")});
+var notes=$("#notes"),nt;notes.value=store.get("notes","");notes.addEventListener("input",function(){clearTimeout(nt);nt=setTimeout(function(){store.set("notes",notes.value);$("#notes-saved").textContent="Saved on this device · "+new Date().toLocaleTimeString([],{hour:"numeric",minute:"2-digit"})},400)});
+/* ===== PREVIOUS TRIPS (+ device-only photos in IndexedDB) ===== */
+var db=null;
+function idb(){return new Promise(function(res){try{if(!window.indexedDB)return res(null);var rq=indexedDB.open("mx27-photos",1);rq.onupgradeneeded=function(){rq.result.createObjectStore("p",{keyPath:"id",autoIncrement:true}).createIndex("trip","trip")};rq.onsuccess=function(){res(rq.result)};rq.onerror=function(){res(null)}}catch(e){res(null)}})}
+function loadPhotos(trip){return new Promise(function(res){if(!db)return res([]);var out=[],c=db.transaction("p").objectStore("p").index("trip").openCursor(IDBKeyRange.only(trip));c.onsuccess=function(){var cur=c.result;if(cur){out.push(cur.value);cur.continue()}else res(out)};c.onerror=function(){res([])}})}
+function addPhoto(trip,blob){return new Promise(function(res){if(!db)return res();var tx=db.transaction("p","readwrite");tx.objectStore("p").add({trip:trip,blob:blob});tx.oncomplete=res;tx.onerror=res})}
+function delPhoto(id){return new Promise(function(res){if(!db)return res();var tx=db.transaction("p","readwrite");tx.objectStore("p").delete(id);tx.oncomplete=res;tx.onerror=res})}
+var lbList=[],lbI=0,lastFocus=null;
+function openLB(list,i){lbList=list;lbI=(i+list.length)%list.length;var p=list[lbI];$("#lb-img").src=p.url;$("#lb-img").alt=p.caption||"Trip photo";$("#lb-cap").textContent=(p.caption?p.caption+" · ":"")+(lbI+1)+" of "+list.length;
+ $("#lb-prev").hidden=$("#lb-next").hidden=list.length<2;if($("#lb").hidden)lastFocus=document.activeElement;$("#lb").hidden=false;document.body.style.overflow="hidden";$("#lb-close").focus()}
+function closeLB(){$("#lb").hidden=true;document.body.style.overflow="";if(lastFocus)lastFocus.focus()}
+$("#lb-close").onclick=closeLB;$("#lb-prev").onclick=function(){openLB(lbList,lbI-1)};$("#lb-next").onclick=function(){openLB(lbList,lbI+1)};
+$("#lb").addEventListener("click",function(e){if(e.target.id==="lb"||e.target.tagName==="FIGURE")closeLB()});
+document.addEventListener("keydown",function(e){if($("#lb").hidden)return;if(e.key==="Escape")closeLB();else if(e.key==="ArrowLeft")openLB(lbList,lbI-1);else if(e.key==="ArrowRight")openLB(lbList,lbI+1);
+ else if(e.key==="Tab"){var f=$$("#lb button").filter(function(b){return !b.hidden}),idx=f.indexOf(document.activeElement);e.preventDefault();f[(idx+(e.shiftKey?-1:1)+f.length)%f.length].focus()}});
+function renderTrip(trip,card){loadPhotos(trip.id).then(function(extra){
+ var list=[{url:trip.photo,caption:trip.caption}].concat(extra.map(function(p){return {url:URL.createObjectURL(p.blob),id:p.id}}));
+ var al=$(".album",card);al.innerHTML=list.slice(1).map(function(p,i){return '<div class="tile"><button class="open" type="button" data-i="'+(i+1)+'" aria-label="View added photo '+(i+1)+' full size"><img src="'+p.url+'" alt="'+trip.year+' trip photo '+(i+2)+'"></button><button class="rm" type="button" data-rm="'+p.id+'" aria-label="Remove added photo '+(i+1)+'">×</button></div>'}).join("");
+ $(".cover",card).onclick=function(){openLB(list,0)};
+ $$(".open",al).forEach(function(b){b.onclick=function(){openLB(list,+b.dataset.i)}});
+ $$(".rm",al).forEach(function(b){b.onclick=function(){delPhoto(+b.dataset.rm).then(function(){renderTrip(trip,card)})}});
+ $(".count-ph",card).textContent=list.length+" photo"+(list.length>1?"s":"")})}
+idb().then(function(d){db=d;var grid=$("#trip-grid");
+ TRIPS.forEach(function(trip){var card=document.createElement("article");card.className="card trip";
+  card.innerHTML='<button class="cover" type="button" aria-label="View '+esc(trip.caption)+' full size"><img src="'+trip.photo+'" alt="'+esc(trip.caption)+'" decoding="async"></button><div class="tin"><p class="trip-year">'+trip.year+'</p><h3>'+esc(trip.resort)+'</h3><p class="loc">📍 '+esc(trip.loc)+' · <span class="count-ph"></span></p><div class="album" role="group" aria-label="'+trip.year+' added photos"></div>'+
+  '<button class="btn btn-soft add" type="button">+ Add photos</button><input type="file" accept="image/*" multiple hidden aria-label="Upload photos to the '+trip.year+' album"><p class="lock">🔒 Photos you add here are only visible to you on this device'+(db?" (kept after reload)":"")+'.</p></div>';
+  var inp=$("input[type=file]",card);$(".add",card).onclick=function(){inp.click()};
+  inp.onchange=function(){Promise.all(Array.prototype.map.call(inp.files,function(f){return addPhoto(trip.id,f)})).then(function(){inp.value="";renderTrip(trip,card)})};
+  grid.appendChild(card);renderTrip(trip,card)});
+ var nx=document.createElement("article");nx.className="card next-trip";nx.innerHTML='<p class="trip-year">2027</p><h3 style="font-family:var(--serif);font-size:1.3rem">Trip #3 — resort TBD</h3><p class="note" style="margin:0">Sept 21–26, 2027 · pick from the <a href="#resorts">Top 6</a>.</p><p class="note placeholder" style="margin:0">Add the 2027 group photo here after the trip.</p>';grid.appendChild(nx)});
+
+/* ===== NAV scrollspy ===== */
+var links=$$(".nav a.link"),secs=links.map(function(a){return $(a.getAttribute("href"))});
+if("IntersectionObserver" in window){var io=new IntersectionObserver(function(en){en.forEach(function(e){if(!e.isIntersecting)return;links.forEach(function(a){var on=a.getAttribute("href")==="#"+e.target.id;a.setAttribute("aria-current",on?"true":"false");if(on&&window.innerWidth<700)a.parentNode.scrollTo({left:a.offsetLeft-80,behavior:"smooth"})})})},{rootMargin:"-40% 0px -55% 0px"});secs.forEach(function(s){io.observe(s)})}
+
+renderIns();renderResorts();renderEst();
+window.__mx={calc:calc,RESORTS:RESORTS,est:function(){return est}};
+})();
+</script>
+</body>
+</html>
